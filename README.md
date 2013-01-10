@@ -4,7 +4,7 @@ This is a command line interface for playing Digitally Imported Radio stations u
 
 ---
 
-Copyright (c) 2012, Zack Lofgren<br>
+Copyright (c) 2013, Zack Lofgren<br>
 All rights reserved.
 
 Distributed under the BSD 2-Clause License.
@@ -13,6 +13,8 @@ Distributed under the BSD 2-Clause License.
 
 **Python 3** - Install via your package manager ("python3")<br>
 **mplayer** - Install via your package manager ("mplayer")
+<br>
+A folder of .pls stream files
 
 ##Use
 
