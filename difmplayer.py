@@ -52,3 +52,4 @@ while choice.lower() != "q":
 	elif choice.lower() == "p":
 		playStation()
 		clear()
+		
