@@ -13,7 +13,7 @@ Distributed under the BSD 2-Clause License.
 
 **Python 3** - Install via your package manager ("python3")<br>
 **mplayer** - Install via your package manager ("mplayer")
-<br>
+<br><br>
 A folder of .pls stream files
 
 ##Use
