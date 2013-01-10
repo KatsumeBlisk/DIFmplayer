@@ -18,4 +18,7 @@ A folder of .pls stream files
 
 ##Use
 
+Download streams from di.fm (or any source) and put them in a directory. The program will ask for the path to this directory.
+
 Make the script executable, and run just like any binary.
+
