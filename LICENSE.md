@@ -1,6 +1,6 @@
 **BSD 2-Clause License**
 
-Copyright (c) 2012, Zack Lofgren<br>
+Copyright (c) 2013, Zack Lofgren<br>
 All rights reserved.
 
 
