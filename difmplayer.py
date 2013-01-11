@@ -27,8 +27,6 @@ def playStation():
 	
 path = input("Input path to stations: ")
 
-path = "/home/zack/stations"
-
 stations = os.listdir(path)
 
 stations.sort()
@@ -42,14 +40,11 @@ print(len(stations))
 while choice.lower() != "q":
 	menu()
 	choice = input("% ")
-	if choice.lower() == "clear":
-		clear()
-
-	elif choice.lower() == "l":
+	
+	if choice.lower() == "l":
 		clear()
 		listStations()
 
 	elif choice.lower() == "p":
 		playStation()
 		clear()
-		
