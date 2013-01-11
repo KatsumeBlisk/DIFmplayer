@@ -35,8 +35,6 @@ choice = ""
 
 clear()
 
-print(len(stations))
-
 while choice.lower() != "q":
 	menu()
 	choice = input("% ")
