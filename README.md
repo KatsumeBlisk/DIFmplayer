@@ -22,3 +22,7 @@ Download streams from di.fm (or any source) and put them in a directory. The pro
 
 Make the script executable, and run just like any binary.
 
+##Upcoming Features
+
+* config file for station directory
+* better user interface
