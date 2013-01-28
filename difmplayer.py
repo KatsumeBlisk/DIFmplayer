@@ -24,8 +24,20 @@ def playStation():
 	toPlay = path + "/" + stations[s - 1]
 	subprocess.call(["mplayer", "-playlist", toPlay])
 
-	
-path = input("Input path to stations: ")
+home = os.getenv("HOME")
+
+if((os.path.isfile(home + "/.difmplayer.conf"))):
+	conf = open(home + "/.difmplayer.conf")
+	path = conf.read()
+
+else:
+	path = input("Input your stations directory: ")
+	save = input("Would you like to set this as the default directory? [y/n] ")
+	if save.lower() == "y":
+		conf = open(home + "/.difmplayer.conf", mode='w')
+		conf.write(path)
+
+conf.close()
 
 stations = os.listdir(path)
 

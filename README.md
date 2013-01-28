@@ -24,5 +24,4 @@ Make the script executable, and run just like any binary.
 
 ##Upcoming Features
 
-* config file for station directory
 * better user interface
