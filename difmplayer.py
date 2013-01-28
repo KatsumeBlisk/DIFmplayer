@@ -29,6 +29,7 @@ home = os.getenv("HOME")
 if((os.path.isfile(home + "/.difmplayer.conf"))):
 	conf = open(home + "/.difmplayer.conf")
 	path = conf.read()
+	conf.close()
 
 else:
 	path = input("Input your stations directory: ")
@@ -36,8 +37,7 @@ else:
 	if save.lower() == "y":
 		conf = open(home + "/.difmplayer.conf", mode='w')
 		conf.write(path)
-
-conf.close()
+		conf.close()
 
 stations = os.listdir(path)
 
