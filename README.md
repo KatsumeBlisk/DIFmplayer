@@ -22,7 +22,7 @@ Download streams from di.fm (or any source) and put them in a directory. The pro
 
 Make the script executable, and run just like any binary.
 
-#Optional:
+*Optional:*
 
 I have added a bash script to rename the files from di.fm to remove the unnecessary "Digitally Imported" from their names.
 
