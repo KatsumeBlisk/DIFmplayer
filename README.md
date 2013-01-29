@@ -18,7 +18,7 @@ A folder of .pls stream files
 
 ##Use
 
-Download streams from di.fm (or any source) and put them in a directory. You will need to remove spaces. This'll probably break the script. The program will ask for the path to this directory.
+Download streams from di.fm (or any source) and put them in a directory. You will need to remove spaces. Spaces will probably break it. The program will ask for the path to this directory.
 
 Make the script executable, and run just like any binary.
 
