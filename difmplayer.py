@@ -2,6 +2,7 @@
 
 import os
 import subprocess
+import random
 
 def clear():
 	subprocess.call("clear")
@@ -9,20 +10,31 @@ def clear():
 def menu():
 	print("[L]ist stations")
 	print("[P]lay station")
+	print("[R]andom station")
 	print("[Q]uit")
 
 def listStations():
 	numStations = len(stations)
 	for i in range(0, numStations):
 		print("[", i + 1, "]", stations[i])
-
 	print()
 
+def startStation(toPlay):
+	subprocess.call(["mplayer", "-quiet", "-playlist", toPlay])
+
 def playStation():
-	print("Press [q] to stop station...")
-	s = eval(input("Input station number to play: "))
-	toPlay = path + "/" + stations[s - 1]
-	subprocess.call(["mplayer", "-playlist", toPlay])
+	s = int(input("Input station to play: "))
+	print("Press [p] to pause the station...")
+	print("Press [q] to stop the station...")
+	input("Press enter to continue. . .")
+	startStation(path + "/" + stations[s - 1])
+	
+
+def randomStation():
+	print("Press [p] to pause the station...")
+	print("Press [q] to stop the station...")
+	input("Press enter to continue. . .")
+	startStation(path + "/" + stations[random.randint(0, len(stations) - 1)])
 
 home = os.getenv("HOME")
 
@@ -57,4 +69,8 @@ while choice.lower() != "q":
 
 	elif choice.lower() == "p":
 		playStation()
+		#clear()
+
+	elif choice.lower() == "r":
+		randomStation()
 		clear()

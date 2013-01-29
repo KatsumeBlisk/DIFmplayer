@@ -1,4 +1,4 @@
-##DIFmplayer 1.1
+##DIFmplayer 1.2
 
 This is a command line interface for playing Digitally Imported Radio stations using mplayer.
 
