@@ -26,7 +26,7 @@ Make the script executable, and run just like any binary.
 
 I have added a bash script to rename the files from di.fm to remove the unnecessary "Digitally Imported" from their names.
 
-To just remove stations, run the following command in your terminal:
+To just change spaces to underscores, run the following command in your terminal:
 
     find -name "* *" -type f | rename 's/ /_/g'
 
