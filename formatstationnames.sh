@@ -8,10 +8,8 @@ read -p "Input path to the directory of files to clean up: " path
 
 cd $path
 
-find -name "* *" -type f | rename 's/ /_/g'
-
 for i in *.pls
 do
 	file=${i:21}
-	mv $i ./$file
+	mv "$i" "./$file"
 done

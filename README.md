@@ -18,17 +18,13 @@ A folder of .pls stream files
 
 ##Use
 
-Download streams from di.fm (or any source) and put them in a directory. You will need to remove spaces. Spaces will probably break it. The program will ask for the path to this directory.
+Download streams from di.fm (or any source) and put them in a directory. The program will ask for the path to this directory.
 
 Make the script executable, and run just like any binary.
 
 **Optional:**
 
 I have added a bash script to rename the files from di.fm to remove the unnecessary "Digitally Imported" from their names.
-
-To just change spaces to underscores, run the following command in your terminal:
-
-    find -name "* *" -type f | rename 's/ /_/g'
 
 ##Upcoming Features
 
