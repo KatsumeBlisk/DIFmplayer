@@ -78,3 +78,4 @@ while choice.lower() != "q":
 	elif choice.lower() == "r":
 		randomStation()
 		clear()
+		
