@@ -11,6 +11,7 @@ def menu():
 	print("[L]ist stations")
 	print("[P]lay station")
 	print("[R]andom station")
+	print("[H]elp")
 	print("[Q]uit")
 
 def listStations():
@@ -24,16 +25,14 @@ def startStation(toPlay):
 
 def playStation():
 	s = int(input("Input station to play: "))
-	print("Press [p] to pause the station...")
-	print("Press [q] to stop the station...")
-	input("Press enter to continue. . .")
 	startStation(path + "/" + stations[s - 1])
-	
 
-def randomStation():
-	print("Press [p] to pause the station...")
-	print("Press [q] to stop the station...")
+def help():
+	print("Press [p] to pause the station. . .")
+	print("Press [q] to stop the station. . .")
 	input("Press enter to continue. . .")
+	
+def randomStation():
 	startStation(path + "/" + stations[random.randint(0, len(stations) - 1)])
 
 home = os.getenv("HOME")
@@ -70,6 +69,11 @@ while choice.lower() != "q":
 	elif choice.lower() == "p":
 		playStation()
 		clear()
+
+	elif choice.lower() == "h":
+		help()
+		clear()
+		clear
 
 	elif choice.lower() == "r":
 		randomStation()
