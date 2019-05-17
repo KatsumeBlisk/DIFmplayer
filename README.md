@@ -1,4 +1,4 @@
-#This project has been deprecated. It is unmaintained and a school project from freshman year of college. It doesn't need to exist. Feel free to use it I guess because it's free software.
+# This project has been deprecated. It is unmaintained and a school project from freshman year of college. It doesn't need to exist. Feel free to use it I guess because it's free software.
 
 ##DIFmplayer 1.2.1
 
